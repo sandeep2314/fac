@@ -23,7 +23,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 finish();
-                startActivity(new Intent(getApplication(),LoginActivity.class));
+                startActivity(new Intent(getApplication(),LoginActivity.class2314
+                ));
             }
         });
     }

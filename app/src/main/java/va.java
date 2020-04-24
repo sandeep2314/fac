@@ -28,6 +28,9 @@ public class va {
 
 
 
+    public String getGender() {
+        return gender;
+    }
 
 
 
