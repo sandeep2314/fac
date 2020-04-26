@@ -43,31 +43,6 @@
         android:layout_marginTop="40dp"
         android:orientation="horizontal" />
 
-    <RadioButton
-        android:id="@+id/radioButtonMale"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:checked="true"
-        android:layout_marginBottom="440dp"
-        android:layout_marginTop="440dp"
-        android:text="Male" />
-
-        <RadioButton
-            android:id="@+id/radioButtonFemale"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="470dp"
-            android:layout_marginTop="470dp"
-            android:text="Female" />
-
-
-        <Button
-            android:id="@+id/buttonRegister"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="100dp"
-            android:layout_marginTop="500dp"
-            android:text="Register" />
 
         <TextView
             android:id="@+id/textViewLogin"
@@ -79,6 +54,13 @@
             android:textAlignment="center"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
 
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="510dp"
+        android:layout_marginTop="510dp"
+        android:text="Login" />
 
 
 
