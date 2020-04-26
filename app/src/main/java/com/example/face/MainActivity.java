@@ -23,11 +23,10 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.buttonRegister).setOnClickListener(new View.OnClickListener() {
 
 
-
             @Override
             public void onClick(View v) {
                 finish();
-               startActivity(new Intent(getApplication(),LoginActivity
+               startActivity(new Intent(getApplication(),LoginActivity.class
                 ));
             }
         });
