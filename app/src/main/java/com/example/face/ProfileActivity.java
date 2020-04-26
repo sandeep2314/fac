@@ -29,7 +29,7 @@ import androidx.appcompat.app.AppCompatActivity;
                                                                    @Override
                                                                    public void onClick(View view) {
                                                                        finish();
-                                                                       2314
+
 
                                                                    }
 
