@@ -1,5 +1,6 @@
 package com.example.face;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -20,10 +21,13 @@ public class MainActivity extends AppCompatActivity {
 
 
         findViewById(R.id.buttonRegister).setOnClickListener(new View.OnClickListener() {
+
+
+
             @Override
             public void onClick(View v) {
                 finish();
-                startActivity(new Intent(getApplication(),LoginActivity.class2314
+               startActivity(new Intent(getApplication(),LoginActivity
                 ));
             }
         });
