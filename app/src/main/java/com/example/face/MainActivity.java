@@ -1,45 +1,41 @@
 package com.example.face;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.RadioGroup;
-import android.widget.Toast;
 
-import static java.sql.Types.NULL;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
+
+
+    private EditText editTextUsername, editTextEmail, editTextPassword;
+    RadioGroup radioGroupGender;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-      setContentView(R.layout.activity_product);
+        setContentView(R.layout.activity_main);
 
 
 
 
-        findViewById(R.id.buttontextViewRegister_product).setOnClickListener(new View.OnClickListener(){
+
+        findViewById(R.id.buttonRegister_).setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-
+            public void onClick(View view) {
+                //if user pressed on button register
+                //here we will register the user to server
                 finish();
-                startActivity(new Intent(getApplicationContext(), ProfileActivity.class));
+                startActivity(new Intent(MainActivity.this, ProductActivity.class));
 
 
-
-            ;}
-
-        });
-
-
-    }
+           }
+       });
+        }
 
 
-
-
-
-    }
+}

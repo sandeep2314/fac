@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
 
     <LinearLayout
+        android:background="@color/colorPrimaryDark"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:orientation="vertical"
+        android:soundEffectsEnabled="true"
         android:padding="10dp">
 
 
@@ -16,58 +20,55 @@
             android:id="@+id/editTextUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="9dp"
             android:layout_marginTop="300dp"
+            android:layout_marginBottom="9dp"
             android:hint="Username"
+            android:textColorHint="@color/colorAccent"
+            android:textColor="@color/colorAccent"
+            android:background="@color/colorPrimaryDark"
+            android:soundEffectsEnabled="true"
             android:inputType="text" />
 
         <EditText
             android:id="@+id/editTextPassword"
-            android:layout_width="match_parent"
+           android:hint="Password"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:layout_marginTop="8dp"
             android:fontFamily="sans-serif"
-            android:hint="Password"
+            android:textColor="@color/colorAccent"
+            android:background="@color/colorPrimaryDark"
+            android:soundEffectsEnabled="true"
+            android:layout_width="match_parent"
+            android:textColorHint="@color/colorAccent"
             android:inputType="textPassword" />
 
         <Button
             android:id="@+id/buttonLogin_activity_product"            android:layout_height="wrap_content"
-
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorAccent"
             android:layout_width="match_parent"
             android:layout_marginBottom="9dp"
             android:layout_marginTop="20dp"
+            android:soundEffectsEnabled="true"
             android:text="Login" />
 
-        <TextView
-            android:id="@+id/buttontextViewRegister_product"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="8dp"
-            android:text="Dont' have an account?\nRegister Here"
-            android:textAlignment="center"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
 
 
-
-        <Button
-            android:id="@+id/buttonRegister"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="100dp"
-            android:layout_marginTop="500dp"
-            android:text="Register" />
 
         <TextView
-            android:id="@+id/buttonRegistertext_product"
+            android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="550dp"
-            android:layout_marginTop="550dp"
-            android:text="Already Registered?\nLogin Here"
+            android:layout_marginTop="340dp"
+            android:text="Dont' have an account?\nRegister Here"
             android:textAlignment="center"
+            android:textColor="@color/colorAccent"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+
+
 
 
 

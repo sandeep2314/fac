@@ -17,24 +17,22 @@ import androidx.appcompat.app.AppCompatActivity;
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_profile);
-
+            setContentView(R.layout.activity_product);
 
             textViewId = (TextView) findViewById(R.id.textViewId);
             textViewUsername = (TextView) findViewById(R.id.textViewUsername);
             textViewEmail = (TextView) findViewById(R.id.textViewEmail);
             textViewGender = (TextView) findViewById(R.id.textViewGender);
 
-            findViewById(R.id.buttonLogout).setOnClickListener(new View.OnClickListener() {
+            findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
                                                                    @Override
-                                                                   public void onClick(View view) {
-                                                                       finish();
+                   public void onClick(View view) {
+                       finish();
+                       startActivity(new Intent(getApplicationContext(), MainActivity.class));
 
+                   }
 
-                                                                   }
-
-                                                               }
-
+               }
 
 
             );
