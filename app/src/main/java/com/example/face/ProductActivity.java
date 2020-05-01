@@ -26,11 +26,17 @@ findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
 
-
+finish();
         startActivity(new Intent(ProductActivity.this, MainActivity.class))  ;
 
 
-
+findViewById(R.id.buttonLogin_activity).setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        finish();
+startActivity(new Intent(ProductActivity.this, Login_Activity.class));
+    }
+});
        };
 
 

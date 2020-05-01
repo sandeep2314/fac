@@ -24,15 +24,23 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        findViewById(R.id.buttonRegister_).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.button_already_registered).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //if user pressed on button register
-                //here we will register the user to server
+                //here we will register the uer to server
                 finish();
                 startActivity(new Intent(MainActivity.this, ProductActivity.class));
 
+findViewById(R.id.buttonRegister_MainActivity).setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        finish();
+        startActivity(new Intent(MainActivity.this, Login_Activity.class));
+          }
 
+
+});
            }
        });
         }
