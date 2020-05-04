@@ -12,7 +12,6 @@
         android:layout_height="match_parent"
         android:layout_centerVertical="true"
         android:orientation="vertical"
-        android:background="@color/colorPrimaryDark"
         android:padding="120dp"/>
 
 
@@ -21,9 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="9dp"
-        android:layout_marginTop="280dp"
-        android:textColorHint="@color/colorAccent"
-        android:textColor="@color/colorAccent"
+        android:layout_marginTop="290dp"
         android:hint="Username"
         android:inputType="text" />
 
@@ -32,29 +29,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="9dp"
-        android:layout_marginTop="330dp"
-        android:textColor="@color/colorAccent"
-        android:textColorHint="@color/colorAccent"
+        android:layout_marginTop="340dp"
         android:hint="Email"
         android:inputType="textEmailAddress" />
 
-
-    <RadioGroup
-        android:id="@+id/radioGender"
+    <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_marginBottom="555dp"
-        android:orientation="horizontal" />
+        android:layout_height="match_parent"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:id="@+id/expanded_menu"/>
+
+
 
     <TextView
             android:id="@+id/button_already_registered"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="550dp"
-            android:layout_marginTop="450dp"
+            android:layout_marginTop="490dp"
             android:text="Already Registered?\nLogin Here"
-            android:textColor="@color/colorAccent"
             android:textAlignment="center"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
 
@@ -63,12 +57,32 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="9dp"
-        android:layout_marginTop= "390dp"
-        android:textColor="@color/colorAccent"
-        android:background="@color/colorPrimary"
+        android:layout_marginTop= "430dp"
         android:text="Register" />
 
+    <RadioGroup
+        android:id="@+id/radioGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="390dp"
+        android:layout_marginBottom="300dp"
+        android:orientation="horizontal" >
 
+    <RadioButton
+        android:id="@+id/Male_Gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="Male"/>
+
+
+    <RadioButton
+        android:id="@+id/Female_Gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="female"/>
+
+    </RadioGroup>
 
         <ProgressBar
             android:visibility="gone"
