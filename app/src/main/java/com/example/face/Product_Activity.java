@@ -8,13 +8,13 @@ import android.widget.Button;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class ProductActivity extends AppCompatActivity {
+public class Product_Activity extends AppCompatActivity {
 
 
 
 private Button button2;
 
-
+public URLs urLs;
 
 
     @Override
@@ -27,14 +27,15 @@ findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
     public void onClick(View v) {
 
 finish();
-        startActivity(new Intent(ProductActivity.this, MainActivity.class))  ;
+        startActivity(new Intent(Product_Activity.this, MainActivity.class))  ;
 
 
-findViewById(R.id.buttonLogin_activity).setOnClickListener(new View.OnClickListener() {
+findViewById(R.id.buttonLogin_Activity).setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
         finish();
-startActivity(new Intent(ProductActivity.this, Login_Activity.class));
+startActivity(new Intent(Product_Activity.this, URLs.class));
+
     }
 });
        };

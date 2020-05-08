@@ -11,7 +11,8 @@
         android:theme="@style/AppTheme">
         <activity android:name=".LoginActivity" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".ProductActivity" >
+        <activity android:name=".Product_Activity" />
+        <activity android:name=".URLs" >
             <intent-filter>
 
                 <action android:name="android.intent.action.MAIN"/>

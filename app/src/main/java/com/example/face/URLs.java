@@ -1,6 +1,8 @@
 package com.example.face;
 
-public class URLs {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class URLs extends AppCompatActivity {
 
 
 
