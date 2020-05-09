@@ -24,21 +24,8 @@ import androidx.appcompat.app.AppCompatActivity;
             textViewEmail = (TextView) findViewById(R.id.textViewEmail);
             textViewGender = (TextView) findViewById(R.id.textViewGender);
 
-            findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
-                                                                   @Override
-                   public void onClick(View view) {
-                       finish();
-                       startActivity(new Intent(getApplicationContext(), MainActivity.class));
-
-                   }
-
-               }
-
-
-            );
+            {
 
         }
-
-    }
-
-
+        }
+        }

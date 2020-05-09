@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="9dp"
         android:textColorHint="@color/colorAccent"
-        android:layout_marginTop="290dp"
+        android:layout_marginTop="250dp"
         android:hint="Username"
         android:inputType="text" />
 
@@ -31,7 +31,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="9dp"
-        android:layout_marginTop="340dp"
+        android:layout_marginTop="295dp"
         android:textColorHint="@color/colorAccent"
         android:hint="Email"
         android:inputType="textEmailAddress" />
@@ -40,6 +40,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:hint="password"
+        android:layout_marginTop="70dp"
         android:textColorHint="@color/colorAccent"
         android:inputType="textPassword"
         android:id="@+id/expanded_menu"/>
@@ -53,7 +54,7 @@
             android:layout_marginBottom="550dp"
             android:layout_marginTop="490dp"
             android:textColorHint="@color/colorAccent"
-            android:text="Already Registered?\nLogin Here"
+            android:text=" Registered  Here"
             android:textAlignment="center"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
 
@@ -64,7 +65,7 @@
         android:layout_marginBottom="9dp"
         android:layout_marginTop= "430dp"
         android:background="@color/colorPrimary"
-        android:text="Register" />
+        android:text="login" />
 
     <RadioGroup
         android:id="@+id/radioGender"
@@ -78,7 +79,7 @@
         android:id="@+id/Male_Gender"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColorHint="@color/colorAccent"
+        android:textColor="@color/colorAccent"
         android:checked="true"
         android:text="Male"/>
 
@@ -86,19 +87,12 @@
     <RadioButton
         android:id="@+id/Female_Gender"
         android:layout_width="wrap_content"
-        android:textColorHint="@color/colorAccent"
+        android:textColor="@color/colorAccent"
         android:layout_height="wrap_content"
         android:text="female"/>
 
     </RadioGroup>
 
-        <ProgressBar
-            android:visibility="visible"
-            android:id="@+id/progressBar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="false"
-            android:layout_centerVertical="true" />
 
 </RelativeLayout>
 

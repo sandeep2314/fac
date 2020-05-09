@@ -3,6 +3,7 @@ package com.example.face;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioGroup;
 
@@ -21,29 +22,25 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
+        Button button= findViewById(R.id.buttonRegister_MainActivity);
 
 
 
-        findViewById(R.id.button_already_registered).setOnClickListener(new View.OnClickListener() {
+
+        button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //if user pressed on button register
                 //here we will register the uer to server
                 finish();
-                startActivity(new Intent(MainActivity.this, Product_Activity.class));
+                startActivity(new Intent(getApplicationContext(), Product2Activity.class));
 
-//findViewById(R.id.buttonRegister_MainActivity).setOnClickListener(new View.OnClickListener() {
-   // @Override
-    //public void onClick(View v) {
-      //  finish();
-        //startActivity(new Intent(MainActivity.this, Login_Activity.class));
+
           }
 
 
 });
            }
-  //     });
-      //  }
 
 
 }
